@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Zack Norton\'s leetcode blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Zack Norton`,
+      summary: `who lives and works in Memphis, Tennessee.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A blog to record my leetcode problem solutions.`,
+    siteUrl: `https://zacknorton.tech/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `zacharywnorton`,
+      linkedin: `zacharywnorton`
     },
   },
   plugins: [
