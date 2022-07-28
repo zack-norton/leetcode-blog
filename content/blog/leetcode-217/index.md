@@ -8,6 +8,8 @@ description: "Solution to LeetCode 217. Contains Duplicate"
 
 >Given an integer array ```nums```, return ```true``` if any value appears **at least twice** in the array, and return ```false``` if every element is distinct.
 
+### Set
+
 This problem is trivialized by the use of a data structure with constant ($O(1)$) lookup time. We can use C#'s HashSet data structure.
 
 ```
