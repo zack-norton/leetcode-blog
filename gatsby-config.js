@@ -3,13 +3,14 @@ module.exports = {
     title: `Zack Norton\'s leetcode blog`,
     author: {
       name: `Zack Norton`,
-      summary: `who lives and works in Memphis, Tennessee.`,
+      summary: `, a software engineer from Memphis, Tennessee.`,
     },
     description: `A blog to record my leetcode problem solutions.`,
     siteUrl: `https://zacknorton.tech/`,
     social: {
       twitter: `zacharywnorton`,
-      linkedin: `zacharywnorton`
+      linkedin: `zacharywnorton`,
+      github: `zack-norton`,
     },
   },
   plugins: [
