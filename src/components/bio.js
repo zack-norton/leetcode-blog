@@ -52,7 +52,7 @@ const Bio = () => {
             You should connect with him on LinkedIn
           </a>
           {` `} or {` `}
-          <a href={`https://github.io/${social?.github || ``}`}>
+          <a href={`https://github.com/${social?.github || ``}`}>
             check out his github
           </a>
         </p>
