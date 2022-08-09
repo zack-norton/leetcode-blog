@@ -33,7 +33,7 @@ while left < right
  Using the above algorithm, we can implement a solution.
 
 #### C#
- ```C#
+ ```csharp
  public int MaxArea(int[] height) {
     int max = 0;
     int left = 0;
