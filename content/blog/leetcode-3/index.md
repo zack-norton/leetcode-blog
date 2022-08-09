@@ -23,7 +23,8 @@ For j = 0 to n
 
 Using the above algorithm, we can solve the problem.
 
-```
+#### C#
+```csharp
     public int LengthOfLongestSubstring(string s) 
     {
         if(s.Length < 2){
@@ -48,6 +49,33 @@ Using the above algorithm, we can solve the problem.
         
         return max;
     }
+```
+
+#### Rust
+```rust
+pub fn length_of_longest_substring(s: String) -> i32 {
+    use std::cmp;
+    use std::collections::HashMap;
+    
+    let mut hash = HashMap::new();
+    let mut max = 0;
+    let mut start = 0;
+    let mut end = 0;
+
+    for (i, item) in s.chars().enumerate() {
+        if let Some(j) = hash.get(&item) {
+            if *j >= start {
+                max = cmp::max(max, end - start);
+                //move window
+                start = *j + 1;
+            }
+        }
+        end += 1;
+        hash.insert(item, i);
+    }
+    max = cmp::max(max, end - start);
+    max as i32
+}
 ```
 
 The time complexity for this solution is $O(n)$, since we simply need to loop through the string looking at each character. The space complexity is $O(m)$, where $m$ is the number of unique characters in the string.
